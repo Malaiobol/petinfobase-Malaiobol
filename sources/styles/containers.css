@@ -1,0 +1,81 @@
+.content-container{
+    width: 900px;
+}
+
+.page-summary-container{
+    width: 60%;
+    height: 475px;
+}
+
+.slogan-container{
+    margin-top: 25px;
+}
+
+.pets-container{
+    margin-top: 25px;
+
+    width: 300px;
+    height: 250px;
+}
+
+.form-container{
+    width: 40%;
+    height: 555px;
+
+    border: solid 1px var(--gray600);
+    border-radius: 4px;
+
+    padding: 40px 25px;
+}
+
+.input-container{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    width: 320px;
+    height: 80px;
+}
+
+.password-container{
+    margin-top: 25px;
+
+    width: 320px;
+    height: 115px;
+}
+
+.register-window-container{
+    margin-top: 25px;
+
+    width: 320px;
+    height: 85px;
+}
+
+
+/* HOMEPAGE STYLIZATION */
+
+.create-post-container{
+    margin-top: 65px;
+    width: 100%;
+
+    padding: 0px 500px;
+}
+
+.feed-separator-container{
+    margin-top: 65px;
+    width: 100%;
+    height: 70px;
+
+    background-color: var(--gray800);
+
+    padding: 0px 500px;
+} 
+
+.posts-container{
+    padding-top: 35px;
+    width: 800px;
+    margin:auto;
+}
+
+.change-post-container{
+    margin-left: 320px;
+}

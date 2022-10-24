@@ -1,0 +1,65 @@
+#redirectRegisterButton{
+    margin-top: 25px;
+}
+
+.site_slogan{
+    color: var(--gray100);
+
+    font-weight: var(--weight600);
+    font-size: var(--size32);
+    line-height: var(--line48);
+}
+
+.site_stack{
+    color: var(--gray300);
+
+    font-weight: var(--weight400);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}
+
+.insert_email{
+    color: var(--gray100);
+
+    font-weight: var(--weight500);
+    font-size: var(--size16);
+    line-height: var(--line20);
+}
+
+.insert_password{
+    color: var(--gray100);
+
+    font-weight: var(--weight500);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}
+
+.wrong_password{
+    color: var(--alert100);
+
+    font-weight: var(--weight400);
+    font-size: var(--size14);
+    line-height: var(--line20);
+
+    display: none;
+}
+
+.appear{
+    display: flex;
+}
+
+.register_question{
+    margin: 25px 65px;
+
+    font-weight: var(--weight500);
+    font-size: var(--size14);
+    line-height: var(line--20px);
+}
+
+.description_button{
+    color: var(--gray300);
+
+    font-weight: var(--weight400);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}

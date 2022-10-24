@@ -1,0 +1,72 @@
+.white_button{
+    width: 320px;
+    height: 39px;
+
+    padding: 0px 16px 0px 16px;
+
+    background-color: var(--white);
+    border: solid 1px var(--gray600);
+    border-radius: 4px;
+
+    color: var(--gray100);
+    font-weight: var(--weight500);
+    line-height: var(--line20);
+}
+
+.white_button:hover{
+    cursor: pointer;
+
+    background-color: var(--gray600);
+    border: solid 1px var(--gray600);
+}
+
+.blue_button{
+    width: 320px;
+    height: 39px;
+
+    padding: 0px 16px 0px 16px;
+
+    background-color: var(--brand200);
+    border: solid 1px var(--brand200);
+    border-radius: 4px;
+    
+    color: var(--gray900);
+    font-weight: var(--weight500);
+    font-size: var(--size16);
+    line-height: 24px;
+}
+
+.blue_button:hover{
+    cursor: pointer;
+
+    border-color: var(--brand100);
+    background-color: var(--brand100);
+    color: var(--gray600);
+}
+
+.red_button{
+
+}
+
+.red_button:hover{
+    
+}
+
+.gray_button{
+    width: 60px;
+    height: 39px;
+
+    padding: 0px 8px 0px 8px;
+
+    color: var(--gray400);
+    
+    background-color: var(--gray700);
+    border: solid 1px var(--gray700);
+    border-radius: 4px;
+}
+
+.gray_button:hover{
+    cursor: pointer;
+
+    background-color: var(--gray600);
+}

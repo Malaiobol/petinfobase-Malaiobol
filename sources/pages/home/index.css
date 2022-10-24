@@ -1,0 +1,74 @@
+.posts-list{
+    width: 100%;
+}
+
+#editPostButton{
+    width: 55px;
+    padding: 0px 8px 0px 8px;
+}
+
+.feed_announcer{
+    color: var(--gray100);
+
+    font-weight: var(--weight500);
+    font-size: var(--size20);
+    line-height: var(--line30);
+}
+
+.poster_name{
+    color: var(--gray100);
+
+    font-weight: var(--weight500);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}
+
+.separator_content{
+    margin-left: 30px;
+    color: var(--gray300);
+}
+
+.post_data{
+    margin-left: 30px;
+    color: var(--gray300);
+
+    font-weight: var(--weight500);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}
+
+.post_title{
+    margin-top: 25px;
+
+    color: var(--gray100);
+
+    font-weight: var(--weight600);
+    font-size: var(--size24);
+    line-height: var(--line36);
+}
+
+.post_summary{
+    margin-top: 20px;
+
+    color: var(--gray300);
+
+    font-weight: var(--weight400);
+    font-size: var(--size16);
+    line-height: var(--size24);
+}
+
+.see_post{
+    margin-top: 20px;
+
+    color: var(--brand100);
+
+    font-weight: var(--weight500);
+    font-size: var(--size16);
+    line-height: var(--size24);
+}
+
+.see_post:hover{
+    cursor: pointer;
+
+    color: var(--brand200);
+}

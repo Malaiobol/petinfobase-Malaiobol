@@ -1,0 +1,39 @@
+#redirectLoginButton{
+    width: max-content;
+}
+
+.bottom_button{
+    min-width: 320px;
+}
+
+.form-container{
+    height: max-content;
+}
+
+.blue_button{
+    margin-bottom: 20px;
+}
+
+.page-summary-container{
+    margin-top: 70px;
+    margin-left: 110px;
+}
+
+.page_phrase{
+    margin-top: 24px;
+
+    font-size: var(--size32);
+    font-weight: var(--weight600);
+    line-height: var(--line48);
+}
+
+
+.page_stack{
+    margin-top: 25px;
+
+    color: var(--gray300);
+
+    font-size: var(size16);
+    font-weight: var(--weight400);
+    line-height: var(--line24);
+}

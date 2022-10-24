@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sources/styles/globalStyles.css">
+    <link rel="stylesheet" href="/sources/styles/displays.css">
+    <link rel="stylesheet" href="/sources/styles/containers.css">
+    <link rel="stylesheet" href="/sources/styles/texts.css">
+    <link rel="stylesheet" href="/sources/styles/inputs.css">
+    <link rel="stylesheet" href="/sources/styles/buttons.css">
+    <link rel="stylesheet" href="/sources/login/index.css">
+    <title>Petinfo - Login</title>
+</head>
+<body class="flex full-size">
+    <main class="content-container flex m-auto">
+        <div class="page-summary-container">
+            <h1 class="site_logo">Petinfo</h1>
+            <div class="slogan-container">
+                <p class="site_slogan"><span class="enphasis_text">Amor</span> e <span class="enphasis_text">carinho</span> por meio do conhecimento</p>
+                <p class="site_stack">Todas as informações para melhorar a vida do seu pet em um só lugar</p>
+            </div>
+            <div class="pets-container f-wrap">
+                <div class="separator-pets">
+                    <img src="/sources/img/Rectangle 2.png" alt="" class="square_pet">
+                    <img src="/sources/img/Rectangle 3.png" alt="" class="square_pet">
+                </div>
+                <img src="/sources/img/Rectangle 4.png" alt="" class="rectangle_pet_base">
+                <img src="/sources/img/Rectangle 5.png" alt="" class="rectangle_pet_standing">
+            </div>
+        </div>
+        <form class="form-container">
+            <h3 class="type_container">Login</h3>
+            <div class="input-container grid">
+                <label for="email" class="insert_email">E-mail</label>
+                <input type="email" name="" class="default_input" id="email" placeholder="Digite seu e-mail...">
+            </div>
+            <div class="password-container grid">
+                <label for="password" class="insert_password">Senha</label>
+                <input type="password" class="default_input" name="" id="password" placeholder="Digite sua senha...">
+                <p class="wrong_password">A senha está incorreta</p>
+            </div>
+            <div class="separator">
+                <button type="submit" class="blue_button" id="loginButton">Acessar</button>
+            </div>
+            <div class="register-window-container f-wrap">
+                <p class="register_question">Ainda não possui uma conta?</p>
+                <p class="description_button">Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
+            </div>                
+            <button type="submit" class="white_button" id="redirectRegisterButton">Cadastrar</button>
+        </form>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

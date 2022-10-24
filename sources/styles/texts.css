@@ -1,0 +1,32 @@
+.site_logo{
+    color: var(--gray100);
+
+    font-weight: var(--weight600);
+    font-size: var(--title);
+    line-height: var(--line48);
+}
+
+.enphasis_text{
+    color: var(--brand100);
+}
+
+.site_stack{
+    color: var(--gray300);
+
+    font-weight: var(--weight400);
+    font-size: var(--size14);
+    line-height: var(--line20);
+}
+
+.type_container{
+    color: var(--gray100);
+
+    font-weight: bold;
+    font-size: var(--size20);
+    line-height: var(--line30);
+}
+
+.appear{
+    display: flex;
+}
+

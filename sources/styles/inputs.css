@@ -1,0 +1,18 @@
+.default_input{
+    width: 319px;
+    height: 45px;
+        
+    padding: 0px 16px 0px 16px;
+
+    background-color: var(--gray800);
+    border: solid 1px var(--gray600);
+    border-radius: 4px;
+}
+
+.default_input::placeholder{
+    color: var(--gray100);
+
+    font-weight: var(--weight400);
+    font-size: var(--size16);
+    line-height: var(--line20);
+}
