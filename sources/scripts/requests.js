@@ -9,8 +9,12 @@ async function login(body){
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(body)     
+            body: JSON.stringify(body)   
+        }) .then((res) => {
+            return res
         })
+
+        console.log(request);
 
         const response = await request.json()
 
