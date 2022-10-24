@@ -18,7 +18,7 @@
         <form class="form-container f-wrap">
             <div class="register_header flex j-between">
                 <h2>Cadastro</h2>
-                <button type="submit" class="white_button" id="redirectLoginButton">Voltar para o login</button>
+                <button type="submit" class="white_button redirectToLogin" id="redirectLoginButtonTop">Voltar para o login</button>
             </div>
             <div class="input-container grid">
                 <label for="name">Usuário</label>
@@ -37,7 +37,7 @@
                 <input type="password" class="default_input" name="passwordRegister" id="passwordRegister" placeholder="Digite sua senha aqui"> 
             </div>
             <button type="submit" class="blue_button" id="registerButton">Cadastrar</button>
-            <button type="submit" class="white_button bottom_button" id="redirectLoginButton">Voltar para o Login</button>
+            <button type="submit" class="white_button redirectToLogin bottom_button" id="redirectLoginButtonBottom">Voltar para o Login</button>
         </form>
         <div class="page-summary-container grid">
             <h1 class="site_logo ">Petinfo</h1>
@@ -53,5 +53,7 @@
             </div>
         </div>
     </main>
+    <script type="module" src="/sources/pages/register/index.js"></script>
+    <script type="module" src="/sources/scripts/changeWindow.js"></script>
 </body>
 </html>

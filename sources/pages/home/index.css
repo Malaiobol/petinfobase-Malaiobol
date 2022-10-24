@@ -72,3 +72,14 @@
 
     color: var(--brand200);
 }
+
+.logout_phrase{
+    border: none;
+    background-color: transparent;
+
+
+}
+
+.logout_phrase:hover{
+    cursor: pointer;
+}
