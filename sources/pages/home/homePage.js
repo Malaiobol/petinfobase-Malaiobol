@@ -1,6 +1,6 @@
 import { logOut } from "../../scripts/changeWindow.js";
 import {setLocalStorage} from "../../scripts/localStorage.js"
-import { getPosts } from "../../scripts/requests.js";
+import { renderName, renderImage, renderMenu, renderPost } from "../../scripts/render.js";
 
 const verifyLogin = () =>{
     const user = setLocalStorage();
@@ -11,7 +11,12 @@ const verifyLogin = () =>{
 }
 
 
-
-
 verifyLogin();
+renderImage();
+
+renderPost();
+renderName();
+renderMenu();
 logOut();
+
+

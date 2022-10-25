@@ -10,15 +10,15 @@
     <link rel="stylesheet" href="/sources/styles/texts.css">
     <link rel="stylesheet" href="/sources/styles/inputs.css">
     <link rel="stylesheet" href="/sources/styles/buttons.css">
-    <link rel="stylesheet" href="/sources/pages/home/index.css">
+    <link rel="stylesheet" href="/sources/pages/home/homePage.css">
     <link rel="stylesheet" href="/sources/styles/toast.css">
     <title>Document</title>
 </head>
 <body class="full-size">
     <header class="create-post-container flex a-center j-between">
         <h1 class="site_logo">Petinfo</h1>
-        <div class="separator">
-            <button class="blue_button">Criar publicação</button>
+        <div class="separator flex a-center">
+            <button class="blue_button" id="createPublication">Criar publicação</button>
             <img src="/sources/img/Rectangle 2.png" alt="" class="profile_img" id="openMenu">
         </div>
     </header>
@@ -28,33 +28,17 @@
         </div>
         <section class="posts-container">
             <ul class="posts-list">
-                <li class="post f-wrap">
-                    <div class="post_header flex a-center">
-                        <div class="poster_stack flex a-center j-between">
-                            <img src="" alt="" class="poster_img_profile">
-                            <p class="poster_name">Samuel Leão</p>
-                        </div>
-                        <div class="separator_content flex a-center">|</div>
-                        <p class="post_data">Outubro de 2022</p>
-                        <div class="change-post-container">
-                            <button type="submit" class="white_button" id="editPostButton">Editar</button>
-                            <button type="submit" class="gray_button" id="removePostButton">Excluir</button>
-                        </div>
-                    </div>
-                    <h4 class="post_title">Outubro Rosa: Detalhes sobre a importância da prevenção do câncer de mama em cadelas e gatas</h4>
-                    <p class="post_summary">Assim como em humanos, cadelas e gatas também podem desenvolver câncer de mama. Ainda hoje, para ambas as espécies, o câncer de mama tem maior...</p>
-                    <p class="see_post" id="postOpener">Acessar publicação</p>
-                </li>
+
             </ul>
         </section>
     </main>
     <div class="menu-container" id="menuLogOut">
         <p class="usuary-email"></p>
-        <div class="logout-account-container">
-            <img src="" alt="" class="logout_image">
-            <button type="submit" class="logout_phrase" id="logOutButton">Sair da conta</button>
+        <div class="logout-account-container flex a-center" id="logOutButton">
+            <img src="/sources/img/sign-out-alt.png" alt="" class="logout_image">
+            <button type="submit" class="logout_phrase">Sair da conta</button>
         </div>
     </div>
-    <script type="module" src="/sources/pages/homePage/index.js"></script>
+    <script type="module" src="/sources/pages/home/homePage.js"></script>
 </body>
 </html>

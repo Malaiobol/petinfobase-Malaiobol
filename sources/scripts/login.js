@@ -1,6 +1,6 @@
 import { login } from "./requests.js";
 
-const  loginTry = () =>{
+const loginTry = () =>{
     const form = document.querySelector(".form-container")
     const elements = [...form.elements]
     
@@ -8,9 +8,9 @@ const  loginTry = () =>{
         e.preventDefault()
         
         const body = {}
-
+        
         elements.forEach((elem) => {
-            if(elem.tagname == "INPUT" && elem.value !== ""){
+            if(elem.tagName === "INPUT" && elem.value !== ""){
                 body[elem.id] = elem.value
             }
         })

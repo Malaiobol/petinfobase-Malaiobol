@@ -29,6 +29,8 @@ ul, a{
   --sucess100:hsl(162, 88%, 26%);
   --sucess200:hsla(162, 88%, 26%, 0.201);
   --white: #FFF;
+  --defaultTest: #fffaf0;
+
 
   --weight600: 600;
   --weight500: 500;
@@ -47,9 +49,7 @@ ul, a{
   --line20: 20px;
 }
 
-
-
 .full-size{
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }

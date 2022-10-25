@@ -1,6 +1,8 @@
-export function setLocalStorage(){
+function setLocalStorage(){
     const user = JSON.parse(localStorage.getItem("user")) 
     || ""
 
     return user;
 }
+
+export {setLocalStorage,}
