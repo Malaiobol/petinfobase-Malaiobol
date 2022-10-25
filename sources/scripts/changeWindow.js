@@ -11,10 +11,9 @@ function windowRegisterToLogin(){
     const changeToLogin = [...document.querySelectorAll(".redirectToLogin")];
 
     changeToLogin.forEach(button => {
-        console.log(button);
         button.addEventListener("click", (e)=>{
             e.preventDefault();
-            console.log(button);
+
             window.location.replace("/index.html");
         })
     })
@@ -26,7 +25,7 @@ function windowLogintoRegister(){
     changeToRegister.addEventListener("click", (e)=>{
         e.preventDefault();
 
-        window.location.replace("http://127.0.0.1:5500/sources/pages/register/index.html")
+        window.location.replace("/sources/pages/register/register.html")
     })
 
 }

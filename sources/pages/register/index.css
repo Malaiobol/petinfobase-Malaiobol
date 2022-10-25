@@ -1,5 +1,6 @@
-#redirectLoginButton{
+#redirectLoginButtonTop{
     width: max-content;
+    margin-left: 10px;
 }
 
 .bottom_button{

@@ -6,6 +6,7 @@ const  loginTry = () =>{
     
     form.addEventListener("submit", async (e) => {
         e.preventDefault()
+        
         const body = {}
 
         elements.forEach((elem) => {
