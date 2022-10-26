@@ -30,6 +30,8 @@ async function renderPost(){
 
     const postContainer = document.querySelector(".posts-list");
     postsList.forEach(post=> {
+        let actualUser = post.user
+
         const li   = document.createElement("li");
         li.classList.add("post");
         li.classList.add("f-wrap");
@@ -54,11 +56,11 @@ async function renderPost(){
 
         const imgProfile = document.createElement("img");
         imgProfile.classList.add("poster_img_profile");
-        imgProfile.src = post.user.avatar;
+        imgProfile.src = actualUser.avatar;
 
         const p1 = document.createElement("p");
         p1.classList.add("poster_name");
-        p1.innerText = post.username;
+        p1.innerText = actualUser.username;
 
         const p2 = document.createElement("p");
         p2.classList.add("post_data");

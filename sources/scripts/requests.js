@@ -4,21 +4,22 @@ import { setLocalStorage } from "./localStorage.js";
 const baseURL = "http://localhost:3333/";
 
 async function login(body){
+    
     try {
 
         const request = await fetch(baseURL + "login", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
             body: JSON.stringify(body)   
         }) 
 
         if(request.ok){
             const response = await request.json()
+
             toast("Sucesso!", "Login realizado com sucesso!")
-            localStorage.setItem("userInfo", JSON.stringify(body))
-            localStorage.setItem("user", JSON.stringify(response))
+            localStorage.setItem("user", response.token)
 
             setTimeout(() =>{
             window.location.replace("/sources/pages/home/home.html")
@@ -72,7 +73,7 @@ async function getPosts(){
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": `Bearer ${localStorage.token}`
+                "Authorization": `Bearer ${localStorage}`
             }
         })
 
@@ -95,7 +96,7 @@ async function getUserInfo(){
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: `Bearer ${localStorage.token}`
+                Authorization: `Bearer ${localStorage}`
             }
         })
         const userInfo = await request.json(); 
