@@ -40,26 +40,30 @@ async function login(body){
 async function register(body){
 
     try{
-      const request = await fetch(baseURL + "users/create", {
+        const request = await fetch(baseURL + "users/create", {
         
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(body)   
+        body: JSON.stringify(body)  
+        
         })
 
         if(request.ok){
-            toast("Sucesso", "Cadastro feito com sucesso!")
         
             setTimeout(()=>{
-
                 window.location.replace("/index.html")
             }, 4000)
+
+            toast("Sucesso!", "Usuário criado com sucesso");    
         } else {
+
             toast("Erro!", "Algo deu errado!");
+
         }
     } catch(err){
+        toast("Erro!", "Algo deu errado!")
         console.log(err);
     }
 }
