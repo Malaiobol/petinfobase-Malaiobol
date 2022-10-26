@@ -59,7 +59,7 @@ async function renderPost(){
         imgProfile.src = actualUser.avatar;
 
         const p1 = document.createElement("p");
-        p1.classList.add("poster_name");
+        p1.classList.add(".poster_name");
         p1.innerText = actualUser.username;
 
         const p2 = document.createElement("p");
