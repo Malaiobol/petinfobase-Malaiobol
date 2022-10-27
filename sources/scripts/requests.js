@@ -124,10 +124,8 @@ async function updatePost(body, idPost){
             },
             body: JSON.stringify(body)
         })
-        toast("Sucesso!", "Seu post foi alterado com sucesso!")
         const  response = await request.json();
         return response
-
     } catch(err){
         toast("Erro!", "Não foi possível alterar seu Post")
         console.log(err);

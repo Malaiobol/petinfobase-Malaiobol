@@ -26,10 +26,11 @@ function renderMenu(){
 }
 
 async function renderPost(){
-    const  postsList = await getPosts();
+    const postsList = await getPosts();
     const postContainer = document.querySelector(".posts-list");
-
     postsList.forEach(post=> {
+      
+
         let actualUser = post.user
 
         const li   = document.createElement("li");

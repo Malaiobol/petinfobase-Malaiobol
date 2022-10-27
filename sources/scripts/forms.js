@@ -34,7 +34,7 @@ const generatePost = () => {
         })
 
         backgroundModal.remove();
-        await  createPost(body);
+        await createPost(body);
         await renderPost();   
     })
     return form
@@ -103,7 +103,7 @@ const updateOldPost = ({title, content, id}) => {
 
         backgroundModal.remove();
         await updatePost(body, id);
-        await renderPost();   
+        window.location.reload();
     })
     return form
 }
