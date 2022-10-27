@@ -6,7 +6,6 @@ const loginTry = () =>{
     
     form.addEventListener("submit", async (e) => {
         e.preventDefault()
-        
         const body = {}
         
         elements.forEach((elem) => {
@@ -14,7 +13,6 @@ const loginTry = () =>{
                 body[elem.id] = elem.value
             }
         })
-
         await login(body);
     })
 }

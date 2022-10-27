@@ -63,3 +63,8 @@
     font-size: var(--size14);
     line-height: var(--line20);
 }
+
+.disable{
+    cursor: none;
+    background-color: var(--brand300);
+}

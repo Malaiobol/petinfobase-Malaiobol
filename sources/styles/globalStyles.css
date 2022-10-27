@@ -11,9 +11,10 @@ ul, a{
   text-decoration: none;
 }
 
-:root {
+:root { 
   --brand100: hsl(230, 57%, 50%);
   --brand200: hsl(230, 68%, 54%);
+  --brand300: hsl(230, 64%, 26%);
   --gray100:  hsl(210, 11%, 15%);
   --gray200:  hsl(210, 10%, 23%);
   --gray300:  hsl(210, 9%, 31%);
@@ -31,12 +32,11 @@ ul, a{
   --white: #FFF;
   --defaultTest: #fffaf0;
 
-
   --weight600: 600;
   --weight500: 500;
   --weight400: 400;
 
-  --title: 40px;  
+  --title:  40px;  
   --size32: 32px;
   --size24: 24px;
   --size20: 20px;

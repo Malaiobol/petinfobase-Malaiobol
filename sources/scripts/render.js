@@ -1,6 +1,6 @@
-import { setLocalStorage } from "./localStorage.js";
-import { getUserInfo, getPosts, createPost} from "./requests.js";
-
+import { updateOldPost, excludePost } from "./forms.js";
+import { getUserInfo, getPosts} from "./requests.js";
+import { openModal } from "./modal.js"
  
 async function renderName(){
     const user = await getUserInfo();
@@ -27,8 +27,8 @@ function renderMenu(){
 
 async function renderPost(){
     const  postsList = await getPosts();
-
     const postContainer = document.querySelector(".posts-list");
+
     postsList.forEach(post=> {
         let actualUser = post.user
 
@@ -81,11 +81,21 @@ async function renderPost(){
 
         const button1 = document.createElement("button");
         button1.classList.add("white_button");
+        button1.classList.add("edit_button");
         button1.innerText = "Editar";
+        button1.id = post.id;
+        button1.addEventListener("click", async ()=>{
+            const postEdit = updateOldPost(post)
+            openModal(postEdit);
+        })
 
         const button2 = document.createElement("button");
         button2.classList.add("gray_button");
         button2.innerText = "Excluir";
+        button2.addEventListener("click", async ()=>{
+            const excludePostId = excludePost(post);
+            openModal(excludePostId);
+        })
         
         div4.append(button1, button2);
         div2.append(imgProfile, p1);
@@ -94,17 +104,4 @@ async function renderPost(){
         postContainer.append(li);
     });
 }
-
-function createNewPost(){
-    const button = document.getElementById("createPublication");
-
-    button.addEventListener("click", async ()=>{
-        const post = {
-            "title": "Castração Solidária",
-		    "content": "Estou promovendo um evento com parceria de algumas petShops e clinicas veterinárias da região de Porto Alegre e faremos a castração gratuita dos 100 primeiros pets que estiver no parque da redenção no dia 10/10/2022"
-        }
-        createPost(post);
-    })
-}
-createNewPost();
 export { renderPost, renderName, renderImage, renderMenu}

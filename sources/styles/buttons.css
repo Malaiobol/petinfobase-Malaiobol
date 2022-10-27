@@ -45,11 +45,26 @@
 }
 
 .red_button{
+    background-color: var(--alert100);
+    color: var(--white);
 
+    height: 40px;
+    width: max-content;
+
+    border: solid 1px var(--alert100);
+    border-radius: 4px;
+    padding: 0px 16px;
+
+    font-weight: var(--weight500);
+    font-size: var(--size16);
+    line-height: var(--line20);
 }
 
 .red_button:hover{
-    
+    cursor: pointer;
+
+    background-color: var(--alert200);
+    border: solid 1px var(--alert200);
 }
 
 .gray_button{
