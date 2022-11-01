@@ -5,7 +5,7 @@ const loginTry = () =>{
     const elements = [...form.elements]
     
     form.addEventListener("submit", async (e) => {
-        e.preventDefault()
+        e.preventDefault();
         const body = {}
         
         elements.forEach((elem) => {
@@ -16,4 +16,4 @@ const loginTry = () =>{
         await login(body);
     })
 }
-loginTry();
+loginTry(); 
